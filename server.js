@@ -31,7 +31,7 @@ app.get('/getAccessToken', async function (request, response) {
     });
 });
 
-app.get('getUserRepos', async function (request, response) {
+app.get('/getUserRepos', async function (request, response) {
     const authHeader = request.get("Authorization");
 
     if (!authHeader) {
